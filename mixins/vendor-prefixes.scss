@@ -1,3 +1,4 @@
+/* Again edited by James Hudson */
 // Vendor Prefixes
 //
 // All vendor mixins are deprecated as of v3.2.0 due to the introduction of
@@ -78,7 +79,8 @@
 }
 
 // CSS3 Content Columns
-@mixin content-columns($column-count; $column-gap: $grid-gutter-width) {
+// James Hudson: Updated to work with SASS
+@mixin content-columns($column-count, $column-gap: $grid-gutter-width) {
   -webkit-column-count: $column-count;
      -moz-column-count: $column-count;
           column-count: $column-count;
@@ -115,7 +117,9 @@
        -o-transform: scale($ratio);
           transform: scale($ratio);
 }
-@mixin scale($ratioX; $ratioY) {
+
+// James Hudson: Updated to work with SASS
+@mixin scale($ratioX, $ratioY) {
   -webkit-transform: scale($ratioX, $ratioY);
       -ms-transform: scale($ratioX, $ratioY); // IE9 only
        -o-transform: scale($ratioX, $ratioY);
@@ -133,19 +137,24 @@
        -o-transform: scaleY($ratio);
           transform: scaleY($ratio);
 }
-@mixin skew($x; $y) {
+// James Hudson: Updated to work with SASS
+@mixin skew($x, $y) {
   -webkit-transform: skewX($x) skewY($y);
       -ms-transform: skewX($x) skewY($y); // See https://github.com/twbs/bootstrap/issues/4885; IE9+
        -o-transform: skewX($x) skewY($y);
           transform: skewX($x) skewY($y);
 }
-@mixin translate($x; $y) {
+
+// James Hudson: Updated to work with SASS
+@mixin translate($x, $y) {
   -webkit-transform: translate($x, $y);
       -ms-transform: translate($x, $y); // IE9 only
        -o-transform: translate($x, $y);
           transform: translate($x, $y);
 }
-@mixin translate3d($x; $y; $z) {
+
+// James Hudson: Updated to work with SASS
+@mixin translate3d($x, $y, $z) {
   -webkit-transform: translate3d($x, $y, $z);
           transform: translate3d($x, $y, $z);
 }

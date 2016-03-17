@@ -1,6 +1,8 @@
+/* Again edited by James Hudson */
 // List Groups
 
-@mixin list-group-item-variant($state; $background; $color) {
+// James Hudson: Updated to work with SASS
+@mixin list-group-item-variant($state, $background, $color) {
   .list-group-item-#{$state} {
     color: $color;
     background-color: $background;
@@ -15,7 +17,7 @@
       &:hover,
       &:focus {
         color: $color;
-        background-color: darken($background, 5%);
+        //background-color: darken($background, 5%); TODO Get working
       }
       &.active,
       &.active:hover,

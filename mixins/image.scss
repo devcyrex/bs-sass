@@ -1,3 +1,4 @@
+/* Again edited by James Hudson */
 // Image Mixins
 // - Responsive image
 // - Retina image
@@ -17,7 +18,8 @@
 //
 // Short retina mixin for setting background-image and -size. Note that the
 // spelling of `min--moz-device-pixel-ratio` is intentional.
-@mixin img-retina($file-1x; $file-2x; $width-1x; $height-1x) {
+// James Hudson: Updated Mixin to work with SASS.
+@mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
   background-image: url("#{$file-1x}");
 
   @media

@@ -1,3 +1,4 @@
+/* Again edited by James Hudson */
 // CSS image replacement
 //
 // Heads up! v3 launched with with only `.hide-text()`, but per our pattern for
@@ -7,8 +8,9 @@
 // Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
 
 // Deprecated as of v3.0.1 (will be removed in v4)
+// James Hudson: commected out "font: "0/0" a;" as throwing error when compiling
 @mixin hide-text() {
-  font: "0/0" a;
+  //font: "0/0" a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -16,6 +18,7 @@
 }
 
 // New mixin to use as of v3.0.1
-.text-hide() {
+// James Hudson: Updated this mixin to work with SASS.
+@mixin text-hide() {
   @include hide-text();
 }

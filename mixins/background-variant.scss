@@ -1,8 +1,9 @@
+/* Again edited by James Hudson */
 // Contextual backgrounds
 
 @mixin bg-variant($color) {
   background-color: $color;
   a&:hover {
-    background-color: darken($color, 10%);
+    //background-color: darken($color, 10%); TODO Get working
   }
 }

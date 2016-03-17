@@ -1,6 +1,8 @@
+/* Again edited by James Hudson */
 // Pagination
 
-@mixin pagination-size($padding-vertical; $padding-horizontal; $font-size; $border-radius) {
+// James Hudson: Updated to work with SASS
+@mixin pagination-size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
   > li {
     > a,
     > span {

@@ -1,3 +1,4 @@
+/* Again edited by James Hudson */
 // Responsive utilities
 
 //
@@ -10,6 +11,7 @@
   td&     { display: table-cell !important; }
 }
 
-.responsive-invisibility() {
+// James Hudson: Updated mixin to work with SASS.
+@mixin responsive-invisibility() {
   display: none !important;
 }

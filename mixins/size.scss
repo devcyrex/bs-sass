@@ -1,10 +1,12 @@
+/* Again edited by James Hudson */
 // Sizing shortcuts
 
-@mixin size($width; $height) {
+@mixin size($width, $height) {
   width: $width;
   height: $height;
 }
 
+//James Hudson: updated mixin to work with SASS
 @mixin square($size) {
-  .size($size; $size);
+  @include size($size, $size);
 }

@@ -1,8 +1,10 @@
+/* Again edited by James Hudson */
 // Text overflow
 // Requires inline-block or block for proper styling
 
-.text-overflow() {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+// James Hudson: Commented out as not working with SASS.
+//.text-overflow() {
+//  overflow: hidden;
+//  text-overflow: ellipsis;
+//  white-space: nowrap;
+//}

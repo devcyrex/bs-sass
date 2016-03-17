@@ -1,6 +1,8 @@
+/* Again edited by James Hudson */
 // Panels
 
-@mixin panel-variant($border; $heading-text-color; $heading-bg-color; $heading-border) {
+// James Hudson: Updated to work with SASS
+@mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
   border-color: $border;
 
   & > .panel-heading {
