@@ -1,6 +1,8 @@
+/* Again edited by James Hudson */
 // Tables
 
-@mixin table-row-variant($state; $background) {
+// James Hudson: updated to work with SASS
+@mixin table-row-variant($state, $background) {
   // Exact selectors below required to override `.table-striped` and prevent
   // inheritance to nested tables.
   .table > thead > tr,

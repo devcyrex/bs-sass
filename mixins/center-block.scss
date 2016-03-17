@@ -1,6 +1,8 @@
+/* Again edited by James Hudson */
 // Center-align a block level element
 
-.center-block() {
+//James Hudson: Updated to work with SASS
+@mixin center-block() {
   display: block;
   margin-left: auto;
   margin-right: auto;
